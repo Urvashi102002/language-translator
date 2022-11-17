@@ -1,38 +1,163 @@
-.App {
-  text-align: center;
+/* body{
+background: url('./images/pexels-photo-949587.webp');
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+padding:  0 10px;
+min-height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.container{
+  min-width: 200px;
+  width: 100%;
+  padding: 50px 20px ;
+  background: rgb(210, 195, 64);
+  border-radius: 7px;
+  /* box-shadow: 10 10px 20px rgba(0,0,0, 0.01); */
+/* }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper{
+  border-radius: 5px;
+  border: 1px solid #ccc;
+ 
+} */
+ /* .wrapper .text-input{
   display: flex;
-  flex-direction: column;
+  padding: 80px;
+  border-bottom: 1px solid #ccc;
+} */ 
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0 10px;
+  min-height: 100vh;
+  background: url('./images/pexels-photo-949587.webp');
 }
-
-.App-link {
-  color: #61dafb;
+.container {
+  min-width: 700px;
+  width: 100%;
+  padding: 30px;
+  background: rgb(230, 237, 106);
+  border-radius: 7px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.01);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wrapper {
+  border-radius: 5px;
+  border: 1px solid rgb(225, 67, 67);
+}
+.wrapper .text-input {
+  display: flex;
+  border-bottom: 1px solid rgb(25, 19, 19);
+  color: #333;
+ 
+ 
+}
+.text-input .to-text {
+  border-radius: 0px;
+  border-left: 1px solid #ccc;
+}
+.text-input textarea {
+  height: 250px;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  background: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.text-input textarea::placeholder {
+  color: #ce4d4d;
+}
+.controls,
+li,
+.icons,
+.icons i {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.controls {
+  list-style: none;
+  padding: 12px 15px;
+}
+.controls .row .icons {
+  width: 38%;
+}
+.controls .row .icons i {
+  width: 50px;
+  color: rgb(227, 38, 38);
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  justify-content: center;
+}
+.controls .row.from .icons {
+  padding-right: 15px;
+  border-right: 1px solid #ccc;
+}
+.controls .row.to .icons {
+  padding-left: 15px;
+  border-left: 1px solid #ccc;
+}
+.controls .row select {
+  color: #333;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background: none;
+  padding-left: 5px;
+}
+ .text-input textarea::-webkit-scrollbar {  
+  width: 4px;
+}
+/*scrollbar ki styling ko hum aese likhte hai */
+.controls .row select::-webkit-scrollbar {
+  width: 8px;
+}
+.text-input textarea::-webkit-scrollbar-track,
+.controls .row select::-webkit-scrollbar-track {
+  background: #fff;
+}
+.text-input textarea::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 8px;
+}
+.controls .row select::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 8px;
+  border-right: 2px solid #ffffff;
+}
+.controls .exchange {
+  color:  rgb(227, 38, 38);
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.2s ease;
+}
+.controls i:active {
+  transform: scale(0.9);
+}
+.container button {
+  width: 100%;
+  padding: 14px;
+  outline: none;
+  border: none;
+  color: #100f0f;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 17px;
+  border-radius: 5px;
+  background: #ba9117;
 }
